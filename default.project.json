@@ -1,0 +1,56 @@
+{
+  "name": "NeonSkyMaze",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": {
+        "$path": "src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": {
+        "FilteringEnabled": true
+      },
+      "Lobby": {
+        "$className": "Folder"
+      }
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "Ambient": [0.05, 0.05, 0.12],
+        "Brightness": 1.4,
+        "ClockTime": 0,
+        "FogColor": [0.02, 0.02, 0.08],
+        "FogEnd": 900,
+        "FogStart": 80,
+        "OutdoorAmbient": [0.08, 0.08, 0.18],
+        "GlobalShadows": true,
+        "Technology": "ShadowMap"
+      }
+    },
+    "SoundService": {
+      "$className": "SoundService",
+      "$properties": {
+        "AmbientReverb": "City"
+      }
+    }
+  }
+}
