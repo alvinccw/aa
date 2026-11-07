@@ -34,8 +34,6 @@ local collectingEnabled = false
 local playerEffects: { [Player]: { [string]: ActiveEffect } } = {}
 local finishedPlayers: { [Player]: boolean } = {}
 local effectTokens: { [Player]: number } = {}
-local originalCollision: { [Player]: string } = {}
-
 local weightedIds: { string } = {}
 
 local function rebuildWeights()
@@ -471,7 +469,6 @@ function PowerupManager.OnPlayerRemoving(player: Player)
 	playerEffects[player] = nil
 	finishedPlayers[player] = nil
 	effectTokens[player] = nil
-	originalCollision[player] = nil
 end
 
 return PowerupManager
